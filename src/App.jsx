@@ -11,6 +11,9 @@ import hokkaido from '../src/assets/imgs/Hokkaido_Rolls.jpg'
 import sd_crumb from '../src/assets/imgs/Sourdough_Crumb.jpg'
 import sd_boule from '../src/assets/imgs/Sourdough_Boule.png'
 import pumpkin from '../src/assets/imgs/Pumpkin_CR.jpg'
+import philly from '../src/assets/imgs/philly.jpg'
+import cali from '../src/assets/imgs/cali.jpg'
+import special from '../src/assets/imgs/special.jpg'
 
 function App() {
   const slides = [
@@ -21,7 +24,7 @@ function App() {
       ingredients: 'Tenders in Nashville Spice / Lettuce / Pickles'
     },
     {
-      url: babka_crumb,
+      url: philly,
       name: 'Chicken Philly',
       bread: 'Toasted Brioche Bun',
       ingredients: 'GRILLED chicken tenders / Provolone / Peppers & Onions / Herb Garlic Aioli'
@@ -63,10 +66,16 @@ function App() {
       ingredients: 'Churrasco Beef / Queso Fresco / Pickled Red Onion & Jalapenos / Chipotle Aioli / Guacamole'
     },
     {
-      url: sd_boule,
+      url: cali,
       name: 'California Chicken Club',
       bread: 'Toasted Ciabatta',
       ingredients: 'Grilled Chicken Breast / Guacamole / Bacon / Provolone / Cheese / Lettuce / Tomato'
+    },
+    {
+      url: special,
+      name: 'Special',
+      bread: 'Toasted Ciabatta',
+      ingredients: 'BBQ Shredded Beef / Cheddar Cheese / Apple / Jalapeno Slaw / French Onions'
     },
     {
       url: pumpkin,
@@ -151,7 +160,10 @@ function App() {
           <h1 className='border-2 text-xs border-blue-500 rounded-full px-2 text-blue-500 cursor-pointer hover:text-purple-500 hover:border-purple-500 hover:scale-[120%] ease-in duration-200' onClick={() => goToSlide(8)} >California Chicken Club</h1>
         </div>
         <div className='flex justify-center'>
-          <h1 className='border-2 text-xs border-blue-500 rounded-full px-2 text-blue-500 cursor-pointer hover:text-purple-500 hover:border-purple-500 hover:scale-[120%] ease-in duration-200' onClick={() => goToSlide(9)} >Sides</h1>
+          <h1 className='border-2 text-xs border-blue-500 rounded-full px-2 text-blue-500 cursor-pointer hover:text-purple-500 hover:border-purple-500 hover:scale-[120%] ease-in duration-200' onClick={() => goToSlide(9)} >Special</h1>
+        </div>
+        <div className='flex justify-center'>
+          <h1 className='border-2 text-xs border-blue-500 rounded-full px-2 text-blue-500 cursor-pointer hover:text-purple-500 hover:border-purple-500 hover:scale-[120%] ease-in duration-200' onClick={() => goToSlide(10)} >Sides</h1>
         </div>
       </div>
 
